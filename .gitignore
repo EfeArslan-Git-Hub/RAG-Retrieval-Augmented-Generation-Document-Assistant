@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+
+# Streamlit
+.streamlit/
+!/.streamlit/config.toml
+
+# IDEs
+.vscode/
+.idea/
+
+# Local Vector Store (if you want to exclude it, though faiss usually saves in memory or specific files)
+*.faiss
+*.pkl
