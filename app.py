@@ -37,7 +37,17 @@ def main():
     if "vector_store_ready" not in st.session_state:
         st.session_state.vector_store_ready = False
 
+    if "current_file_name" not in st.session_state:
+        st.session_state.current_file_name = None
+
     # --- Processing Logic ---
+    # Check if a new file is uploaded
+    if uploaded_file and uploaded_file.name != st.session_state.current_file_name:
+        st.session_state.messages = []
+        st.session_state.vector_store_ready = False
+        st.session_state.chatbot = None
+        st.session_state.current_file_name = uploaded_file.name
+
     if uploaded_file and not st.session_state.vector_store_ready:
         with st.spinner("Processing PDF... This may take a moment (creating embeddings locally)"):
             try:
