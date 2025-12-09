@@ -7,7 +7,7 @@ from src.chatbot import GeminiRAGChatbot
 st.set_page_config(page_title="Free-Tier RAG Assistant", layout="wide")
 
 def main():
-    st.title("🤖 Free-Tier RAG Document Assistant by Efe Arslan")
+    st.title("🤖 RAG Document Assistant by Efe Arslan")
     st.markdown("Chat with your documents using **Gemini Pro** and **Local Embeddings**.")
 
     # --- Sidebar: Configuration ---
