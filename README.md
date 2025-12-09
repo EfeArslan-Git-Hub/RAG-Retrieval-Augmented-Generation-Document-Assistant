@@ -1,5 +1,7 @@
 # 🤖 Free-Tier RAG Document Assistant
 
+Online demo https://efe-arslan-rag.streamlit.app/
+
 > **Chat with your PDFs for free.** No subscriptions, no hidden costs.  
 > Built with **Google Gemini (Free Tier)**, **LangChain**, and **Streamlit**.
 
