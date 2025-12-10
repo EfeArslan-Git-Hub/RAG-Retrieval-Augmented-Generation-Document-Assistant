@@ -4,7 +4,7 @@ from src.document_processor import DocumentProcessor
 from src.chatbot import GeminiRAGChatbot
 
 # Page Config
-st.set_page_config(page_title="Free-Tier RAG Assistant", layout="wide")
+st.set_page_config(page_title="RAG Document Assistant", layout="wide")
 
 def main():
     st.title("🤖 RAG Document Assistant by Efe Arslan")
