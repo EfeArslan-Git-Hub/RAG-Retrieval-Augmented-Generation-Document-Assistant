@@ -20,6 +20,11 @@ def main():
         help="Get your key from https://aistudio.google.com/"
     )
 
+    # Portfolio Button (Always visible)
+    st.sidebar.divider()
+    st.sidebar.link_button("🌐 Portfolio", "https://efe-arslan-portfolio.vercel.app/")
+
+
     if not api_key:
         st.warning("Please enter your Google API Key in the sidebar to proceed.")
         return
